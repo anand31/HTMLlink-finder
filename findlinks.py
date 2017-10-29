@@ -1,7 +1,7 @@
 import urllib2
 import re
 
-url = input("Enter the url:")
+url = input("Enter the URL:")
 #connect to a URL
 website = urllib2.urlopen(url)
 
@@ -11,4 +11,5 @@ html = website.read()
 #use re.findall to get all the links
 links = re.findall('"((http|ftp)s?://.*?)"', html)
 
+#Links will be printed
 print links
