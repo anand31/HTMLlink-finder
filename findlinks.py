@@ -1,7 +1,7 @@
 import urllib2
 import re
 
-url = input("Enter the URL:")
+url = input("Enter the Uniform Resource Locator ( URL: )" )
 #connect to a URL
 website = urllib2.urlopen(url)
 
